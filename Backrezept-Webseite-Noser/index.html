@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <title>JustBakeCookies</title>
+        <!-- Style.css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Bottsrap Grid system -->
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+    </head>
+        <body>
+
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <style>
+ body { 
+margin: 0;
+font-family: "poopins", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h4, h5 {
+    margin: 0;
+}
+.btn_dark {
+    display: inline-block;
+    background-color: #212121;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 100px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transform: all 0.4s;
+}
+.btn_dark:hover {
+    background-color: #fff;
+    color: #ad9660;
+}
+.margin_top {
+    margin-top: 15px;
+}
+.image_responsive{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #212121;
+
+}
+
+.navbar ul li{
+    display:inline-block;
+}
+h1 {
+    margin: 0;
+}
+.navbar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 20px;
+    font-size: 13px;
+    color: #ad9660;
+    letter-spacing: 2px;
+}
+                </style>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Recipe</a>
+                    </li>
+                    <li>
+                        <a href="#">Story</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="hero_section">
+                <style>
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background-image:linear-gradient(#ad9660, #ad9660), url(../img/download.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.hero_text{
+ color: #fff;
+ text-align: center; 
+ text-transform: uppercase;
+ }
+.hero_text h1 {
+ font-size: 100px;
+ font-weight: 500;
+  }
+   .hero_text p {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+                </style>
+                <div class="hero_text">
+                    <h1>Just bake cookies</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#" class="btn_dark margin-top">Read Recipes</a>
+                </div>
+            </div>
+
+            <!-- Recipe Section -->
+            <div class="recipe_Section">
+                <style>
+                   .recipe_section{
+                    padding: 70px 0;
+                   }
+                   .image_wrapper{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #ad9660;
+                    overflow: hidden;
+                    border-radius: 2px;
+                   }
+                   .image_wrapper img {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    transition: all 0.4s;
+                   }
+                   .image_wrapper-text {
+                    padding: 30px 15px;
+                    max-height: 150px;
+                    position:absolute;
+                    bottom: 0px;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: #fff;
+                   }
+
+                   .image_wrapper:hover img {
+                    transform: scale(1.2, 1.2);
+                    cursor: pointer;
+                   }
+                   .image_wrapper-text h5 {
+                    color: #ad9660;
+                    font-size: 20px;
+                    font-weight: 500;
+                   }
+                   .image_wrapper-text p {
+                    line-height: 26px;
+                   }
+                </style>
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image_wrapper">
+                                <img src="img/download.jpg">
+                                <div class="image_wrapper-text">
+                                    <h5>Cookies</h5>
+                                    <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image_wrapper">
+                                <img src="img/download.jpg">
+                                <div class="image_wrapper-text">
+                                    <h5>Cookies</h5>
+                                    <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image_wrapper">
+                                <img src="img/download.jpg">
+                                <div class="image_wrapper-text">
+                                    <h5>Cookies</h5>
+                                    <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about_section">
+                <style>
+                    .about_section{
+                        padding: 70px 0;
+                        background-color: #ad9660;
+                        color: #212121;
+                    }
+                    .about_section h4 {
+                        font-size: 28px;
+                        font-weight: 500;
+                    }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image_backround">
+                                <img src="img/self.jpg" class="image_responsive">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4>Lorena Vennemann</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                 Repellat unde eligendi nisi eaque dolorem facilis,
+                                  a commodi atque rerum esse quia omnis quisquam error, amet,
+                                   aut accusamus molestias perferendis placeat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Foods -->
+            <div class="extra_section"></div>
+
+            <!-- Category Section -->
+            <div class="category_section"></div>
+        </body>
+</html>
