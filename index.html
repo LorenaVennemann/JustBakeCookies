@@ -14,24 +14,40 @@
                 <style>
  body { 
 margin: 0;
-font-family: "poopins", sans-serif;
+font-family: "poppins", sans-serif;
 }
 *{
     box-sizing: border-box;
 }
-h1, h4, h5 {
+h1, h4, h5, p {
     margin: 0;
 }
-.btn_dark {
+.bg_dark{
+    background-color: #212121;
+}
+.text_light {
+    color: #fff;
+}
+.btn_dark,
+.btn_light {
     display: inline-block;
     background-color: #212121;
     color: #fff;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 10px 30px;
     border-radius: 100px;
     font-size: 14px;
     letter-spacing: 2px;
     transform: all 0.4s;
+}
+.btn_dark{
+    background-color: #212121;
+}
+.bg_light {
+    background-color: #ad9660;
+}
+.btn_light{
+    background-color: #ad9660 !important;
 }
 .btn_dark:hover {
     background-color: #fff;
@@ -172,7 +188,7 @@ h1 {
                     <div class="row">
                         <div class="col-md-4">
                             <div class="image_wrapper">
-                                <img src="img/download.jpg">
+                                <img src="img/Starter.jpg">
                                 <div class="image_wrapper-text">
                                     <h5>Cookies</h5>
                                     <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
@@ -181,7 +197,7 @@ h1 {
                         </div>
                         <div class="col-md-4">
                             <div class="image_wrapper">
-                                <img src="img/download.jpg">
+                                <img src="img/Starter.jpg">
                                 <div class="image_wrapper-text">
                                     <h5>Cookies</h5>
                                     <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
@@ -190,7 +206,7 @@ h1 {
                         </div>
                         <div class="col-md-4">
                             <div class="image_wrapper">
-                                <img src="img/download.jpg">
+                                <img src="img/Starter.jpg">
                                 <div class="image_wrapper-text">
                                     <h5>Cookies</h5>
                                     <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
@@ -207,13 +223,34 @@ h1 {
             <div class="about_section">
                 <style>
                     .about_section{
-                        padding: 70px 0;
+                        padding: 50px 0;
                         background-color: #ad9660;
                         color: #212121;
                     }
                     .about_section h4 {
                         font-size: 28px;
                         font-weight: 500;
+                    }
+                    .about_section p {
+                        line-height: 36px;
+                        font-weight: 100;
+                    }
+                    .image_backroung{
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .image_backroung::before{
+                        position: absolute;
+                        top:  -30px;
+                        left: -30px;
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        background-color: #000;
+                    }
+                    .image_backroung img{
+                        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
                     }
                 </style>
                 <div class="container">
@@ -223,21 +260,172 @@ h1 {
                                 <img src="img/self.jpg" class="image_responsive">
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-9">
                             <h4>Lorena Vennemann</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                  Repellat unde eligendi nisi eaque dolorem facilis,
                                   a commodi atque rerum esse quia omnis quisquam error, amet,
                                    aut accusamus molestias perferendis placeat.</p>
+                                   <a href="#" class="btn_dark">Know More</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- More Foods -->
-            <div class="extra_section"></div>
+            <div class="extra_section">
+                <style>
+                    .extra_section {
+                        padding: 70px 0;
 
+                    }
+                    .extra_section h4 {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    .extra_section p{
+                        line-height: 36px;
+                    }
+                    
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/Starter.jpg" class="image_responsive">
+                                </div>
+                                    <div class="col-md-8 bg_dark text_light p-3">
+                                        <h4>Best Cookies</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                         Nihil recusandae itaque officiis necessitatibus aut consectetur expedita vitae alias,
+                                          laudantium laboriosam similique sunt voluptatem saepe totam libero cupiditate? 
+                                          Vel, architecto voluptas!</p>
+                                          <a href="#" class="btn_ligth">read recipe</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/Starter.jpg" class="image_responsive">
+                                </div>
+                                    <div class="col-md-8 bg_dark text_light p-3">
+                                        <h4>Best Cookies</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                         Nihil recusandae itaque officiis necessitatibus aut consectetur expedita vitae alias,
+                                          laudantium laboriosam similique sunt voluptatem saepe totam libero cupiditate? 
+                                          Vel, architecto voluptas!</p>
+                                          <a href="#" class="btn_ligth">read recipe</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/Starter.jpg" class="image_responsive">
+                                </div>
+                                    <div class="col-md-8 bg_dark text_light p-3">
+                                        <h4>Best Cookies</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                         Nihil recusandae itaque officiis necessitatibus aut consectetur expedita vitae alias,
+                                          laudantium laboriosam similique sunt voluptatem saepe totam libero cupiditate? 
+                                          Vel, architecto voluptas!</p>
+                                          <a href="#" class="btn_ligth">read recipe</a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/Starter.jpg" class="image_responsive">
+                                </div>
+                                    <div class="col-md-8 bg_dark text_light p-3">
+                                        <h4>Best Cookies</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                         Nihil recusandae itaque officiis necessitatibus aut consectetur expedita vitae alias,
+                                          laudantium laboriosam similique sunt voluptatem saepe totam libero cupiditate? 
+                                          Vel, architecto voluptas!</p>
+                                          <a href="#" class="btn_ligth">read recipe</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- subscribe section-->
+<div class="subscribe_section">
+    <style>
+        .subscribe_section {
+            padding: 40px 0;
+            background-color: #212121;
+            color: #fff;
+        }
+        .subscribe_section form {
+            display: flex;
+        }
+        .subscribe_section button {
+            background-color: #ad9660;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>for email updates and get a free eCoockbook with 5 recipes</p>
+            </div>
+            <div class="col-md-4">
+                <form><input type="text">
+                <button type="submit">Subscribe</button>
+            </form>
+            </div>
+    </div>
+</div>
             <!-- Category Section -->
-            <div class="category_section"></div>
+            <div class="category_section">
+            <style>
+                .category_section{
+                    padding: 70px 0;
+                }
+            </style>
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image_wrapper">
+                                <img src="img/Starter.jpg">
+                                <div class="image_wrapper-text bg_light">
+                                    <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image_wrapper">
+                                <img src="img/Starter.jpg">
+                                <div class="image_wrapper-text">
+                                    <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image_wrapper">
+                                <img src="img/Starter.jpg">
+                                <div class="image_wrapper-text">
+                                    <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image_wrapper">
+                            <img src="img/Starter.jpg">
+                            <div class="image_wrapper-text">
+                                <p>Irgendeinen text hinschreiben [ber die cookie art u nd so weiter.</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </body>
 </html>
