@@ -315,7 +315,7 @@ Navbar
   color: var(--primary-500);
 }
 
-.contact-link a {
+.contact {
   padding: 0.15rem 1rem;
 }
 
@@ -577,27 +577,6 @@ About Page
 .featured-title {
   text-align: center;
 }
-/*
-=============== 
-Contact Page
-===============
-*/
-.contact-form {
-  width: 100%;
-  margin: 0;
-}
-.contact-container {
-  display: grid;
-  gap: 2rem 3rem;
-  padding-bottom: 3rem;
-}
-@media screen and (min-width: 992px) {
-  .contact-container {
-    grid-template-columns: 1fr 450px;
-    align-items: center;
-  }
-}
-
 /*
 =============== 
 Tags Page
